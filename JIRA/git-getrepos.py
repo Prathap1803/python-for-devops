@@ -7,11 +7,10 @@ headers = {
 
 }
 
-#username = input("Enter your github username :")
-u = "Prathap1803"
-r = "java-maven-soanrqube-jenkins"
-#RepoName = input("Enter your Repo name :")
-url = "https://api.github.com/repos/{}/{}/issues".format(u,r)
+username = input("Enter your github username :")
+
+RepoName = input("Enter your Repo name :")
+url = "https://api.github.com/repos/{}/{}/issues".format(username,RepoName)
 
 response = requests.request(
     "GET",
