@@ -6,7 +6,7 @@ import json
 
 url = "https://dummydotx.atlassian.net/rest/api/3/project"
 
-API_TOKEN = "ATATT3xFfGF0g2fMssngEncoxJNWbMT3zwmKf4g9RQc6K7wqwlU0-G3bpk-FiTlBLD7QX9ZZiVCqwcFApXlwBmmnQ4K_BHcmh4aIbWeuaXGq5Js7H7D3q7Yfbsl9PdEfAYj_VjBLJ9uCF2ikxtw3elye-qrjNkzmThaFHYvinK5sqh6-dp3bgfk=E8378ABB"
+API_TOKEN = "ATATT3xFfGF0DnVsEpZmlqx5S2zgOJsax1wcX1qyOGwoFt5GsrYIiAtSC6EJHWjjbfMyAOM6CMfh6_a5LgW3wf4uPlEDeY_Iel9Tojxyv5hznJV2COjo0HOOht3b_KoKIQG7N8usXSXiYIdHreIJa-9AlUcJmKfrjGvIWnLx3nFJdAneUK5MF4Y=5981BF7E"
 auth = HTTPBasicAuth("dummy.dotx@gmail.com", API_TOKEN)
 
 headers = {
@@ -21,6 +21,6 @@ response = requests.request(
 )
 
 output = json.loads(response.text)
-#print (type(output))
+print (type(output))
 for i in range (len(output)):
     print(output[i]["name"])
