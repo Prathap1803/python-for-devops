@@ -6,7 +6,7 @@ app = Flask(__name__)
 def createJira():
 
     url = "https://dummy-dot5.atlassian.net/rest/api/3/issue"
-    API_TOKEN = "ATATT3xFfGF0tlPrqYy2tyhceKJttXJ25zEMtF7Un3n0c7zDbfonkzsnaivw9dFb8o4hEjvLDJHaWbV2HdoBsOQBq-WFUpZMHjjCrWcakEpiFphnnqf0WFpUKkN3Z284vqYzfz5WYN8Xxpa08AHD3Bt2ZQMzTEm9F2kvJp_vVl09pRJXBPL_cs4=1C3B1049"
+    API_TOKEN = ""
     auth = HTTPBasicAuth("dummy.dotx@gmail.com", API_TOKEN)
     headers = {
     "Accept": "application/json",
