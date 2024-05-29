@@ -35,11 +35,11 @@ payload = json.dumps( {
     
     
     "issuetype": {
-      "id": "10019"
+      "id": "10002"
     },
     
     "project": {
-      "key": "MD"
+      "key": "DP1"
     },
     
     "summary": "Main order flow broken",
